@@ -576,6 +576,36 @@ ul.chlist button:hover .chn {
   font-size: 0.88em;
 }
 
+/* Bảng trong chương: không tràn trang, cuộn ngang trong khung */
+.md table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+.md th,
+.md td {
+  border: 1px solid var(--med-border-strong);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.md th {
+  background: var(--med-powder);
+  color: var(--med-cobalt);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.md tr:nth-child(even) td {
+  background: var(--med-powder-subtle);
+}
+
 /* Course Categories & Chips */
 .filters {
   display: flex;
@@ -1613,6 +1643,21 @@ ul.about li {
   .filters .chip {
     flex-shrink: 0;
     white-space: nowrap;
+  }
+
+  /* Chương: thu hẹp lề khung đọc + chữ bảng để vừa màn hình hơn */
+  .reader .md,
+  .ai .md {
+    padding: 20px 16px;
+  }
+
+  .md table {
+    font-size: 13px;
+  }
+
+  .md th,
+  .md td {
+    padding: 6px 8px;
   }
   
   header {
