@@ -1592,6 +1592,28 @@ ul.about li {
   .app {
     padding: 0 16px 130px;
   }
+
+  /* Luyện đọc ca: các tùy chọn lọc nằm cùng một hàng, kéo ngang để chọn */
+  .filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+  }
+
+  .filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filters .chip {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
   
   header {
     flex-direction: column;
