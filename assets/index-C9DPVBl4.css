@@ -329,17 +329,17 @@ button:disabled {
 }
 
 button.primary {
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-  border: 1px solid #2563eb;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  border: 1px solid #0284c7;
   color: var(--med-white);
   font-weight: 600;
-  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.35), 0 0 0 1px rgba(37, 99, 235, 0.15) inset;
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.35), 0 0 0 1px rgba(2, 132, 199, 0.15) inset;
 }
 
 button.primary:hover {
-  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
-  border-color: #1d4ed8;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.45), 0 0 0 1px #2563eb inset;
+  background: linear-gradient(135deg, #0369a1 0%, #075985 100%);
+  border-color: #0369a1;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.45), 0 0 0 1px #0284c7 inset;
   transform: translateY(-1px);
 }
 
@@ -348,8 +348,8 @@ button.primary:active {
 }
 
 button.primary:disabled {
-  background: #2563eb;
-  border-color: #2563eb;
+  background: #0284c7;
+  border-color: #0284c7;
 }
 
 button.secondary {
@@ -606,11 +606,11 @@ ul.chlist button:hover .chn {
 }
 
 .chip.on {
-  background: #2563eb;
-  border-color: #2563eb;
+  background: #0284c7;
+  border-color: #0284c7;
   color: var(--med-white);
   font-weight: 600;
-  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.35);
 }
 
 /* 12-lead ECG Paper Display Frame */
@@ -670,17 +670,17 @@ img.ecg:hover {
   font-size: 13px;
   font-weight: 600;
   line-height: 1.2;
-  background: #2563eb;
-  border: 1px solid #1d4ed8;
+  background: #0284c7;
+  border: 1px solid #0369a1;
   color: var(--med-white);
   border-radius: var(--radius-sm);
   padding: 6px 14px;
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 1px 3px rgba(2, 132, 199, 0.35);
 }
 
 .chipbtn:hover {
-  background: #1d4ed8;
+  background: #0369a1;
 }
 
 /* Multiple-choice Interactive Options */
@@ -1423,14 +1423,14 @@ ul.about li {
 }
 
 #tabbar button:hover {
-  color: #2563eb;
-  background: #eff6ff;
+  color: #0284c7;
+  background: #f0f9ff;
   transform: none;
   box-shadow: none;
 }
 
 #tabbar button.on {
-  color: #2563eb;
+  color: #0284c7;
   font-weight: 700;
 }
 
@@ -1480,8 +1480,8 @@ ul.about li {
   bottom: 5px;
   left: 4px;
   width: calc((100% - 8px) / 5);
-  background: linear-gradient(180deg, #dbeafe 0%, #eff6ff 100%);
-  border: 1px solid #bfdbfe;
+  background: linear-gradient(180deg, #e0f2fe 0%, #f0f9ff 100%);
+  border: 1px solid #bae6fd;
   border-radius: 12px;
   transition: transform 0.24s cubic-bezier(0.2, 0.8, 0.2, 1);
   pointer-events: none;
@@ -1499,24 +1499,24 @@ ul.about li {
 }
 
 #tabbar button.start .cir {
-  width: 44px;
-  height: 44px;
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
   color: var(--med-white);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.2) inset;
   transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
-  margin-top: -14px;
+  margin-top: -18px;
 }
 
 #tabbar button.start .cir::after {
   content: "";
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   background-color: var(--med-white);
   -webkit-mask: var(--icon-play) no-repeat center;
   mask: var(--icon-play) no-repeat center;
@@ -1527,7 +1527,7 @@ ul.about li {
 
 #tabbar button.start:hover .cir {
   transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.55), 0 0 0 2px var(--med-white) inset;
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.55), 0 0 0 2px var(--med-white) inset;
 }
 
 #tabbar button.start:active .cir {
@@ -1539,8 +1539,8 @@ ul.about li {
 }
 
 #tabbar button.start.on .cir {
-  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.55), 0 0 0 2px #bfdbfe;
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.55), 0 0 0 2px #7dd3fc;
 }
 
 /* Lightbox Modal */
@@ -1670,15 +1670,20 @@ ul.about li {
     height: 16px;
   }
   
+  /* Mobile: không dùng bong bóng chuyển tab, chỉ đổi màu chữ tab đang chọn */
+  .tab-bubble {
+    display: none;
+  }
+
   #tabbar button.start .cir {
-    width: 40px;
-    height: 40px;
-    margin-top: -10px;
+    width: 52px;
+    height: 52px;
+    margin-top: -14px;
   }
 
   #tabbar button.start .cir::after {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
   }
 }
 
