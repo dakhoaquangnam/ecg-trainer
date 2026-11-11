@@ -1,0 +1,10 @@
+{
+ "mean": [
+  -0.0007771724002828525
+ ],
+ "scale": [
+  0.23895642180464072
+ ],
+ "mode": "global",
+ "note": "Chuan hoa toan cuc: v' = (v - mean)/scale ap cho MOI gia tri cua MOI dao trinh. Khong phai chuan hoa theo tung lead."
+}
